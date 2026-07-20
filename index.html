@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bechir Sayadi | Cloud Engineer</title>
+<meta name="description" content="Bechir Sayadi, Cloud Engineer specializing in Microsoft Azure, DevOps automation, and cloud security. B.Sc. Informatik, TU Dresden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">BS<span class="nav__brand-dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-nav="about">About</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#education" data-nav="education">Education</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+
+    <a href="cv.pdf" class="nav__cta" download>Download CV</a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Cloud Engineer · DevOps · Cloud Security</p>
+        <h1 class="hero__name">Bechir Sayadi</h1>
+        <p class="hero__lead">
+          Final-year B.Sc. Informatik student at TU Dresden building secure, automated
+          infrastructure on <strong>Microsoft Azure</strong> — with hands-on depth in
+          Kubernetes, network security, and cryptography.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Get in touch</a>
+          <a href="cv.pdf" class="btn btn--ghost" download>Download PDF</a>
+        </div>
+      </div>
+
+      <div class="hero__photo">
+        <div class="hero__photo-frame">
+          <img src="profile.jpg" alt="Portrait of Bechir Sayadi">
+        </div>
+        <span class="hero__photo-tag">// profile.jpg</span>
+      </div>
+    </div>
+
+    <div class="status-bar" role="note" aria-label="Availability status">
+      <div class="status-bar__item">
+        <span class="status-bar__dot" aria-hidden="true"></span>
+        <span class="status-bar__label">status</span>
+        <span class="status-bar__value">open to opportunities</span>
+      </div>
+      <div class="status-bar__item">
+        <span class="status-bar__label">base</span>
+        <span class="status-bar__value">Dresden, Germany</span>
+      </div>
+      <div class="status-bar__item">
+        <span class="status-bar__label">graduating</span>
+        <span class="status-bar__value">Aug / Sep 2026</span>
+      </div>
+      <div class="status-bar__item">
+        <span class="status-bar__label">focus</span>
+        <span class="status-bar__value">Azure &amp; DevOps</span>
+      </div>
+      <div class="status-bar__item">
+        <span class="status-bar__label">github</span>
+        <span class="status-bar__value">github.com/bach47-lab</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <h2 class="section__heading">About</h2>
+
+    <div class="about__layout">
+      <div class="about__text">
+        <p>
+          I'm a final-year <strong>Computer Science student at TU Dresden</strong> (graduating
+          Aug/Sep 2026), specializing in cloud engineering with a strong focus on
+          <strong>Microsoft Azure</strong> and DevOps automation — backed by a solid theoretical
+          and applied foundation in network security, operating systems security, cryptography,
+          and application security.
+        </p>
+        <p>
+          I have hands-on experience deploying containerized services, Kubernetes workloads, and
+          IoT-edge / digital twin architectures on Linux infrastructure. My bachelor thesis
+          focused on cloud security threat modeling across security, privacy, and digital
+          sovereignty dimensions. I'm looking to bring a security-conscious, automation-first
+          mindset to an Azure-focused Cloud or DevOps Engineer role.
+        </p>
+      </div>
+
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__value">2026</span>
+          <span class="stat__label">Graduating — B.Sc. Informatik</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">3</span>
+          <span class="stat__label">Cloud platforms — Azure, AWS, GCP</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">4</span>
+          <span class="stat__label">Languages spoken</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value">5+</span>
+          <span class="stat__label">Cloud, security &amp; systems projects</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bachelor thesis highlight -->
+    <div class="thesis">
+      <p class="thesis__label">Bachelor Thesis</p>
+      <h3 class="thesis__title">
+        A Comparative Analysis and Lifecycle-Oriented Tool Support for Threat Modeling in Cloud
+        Environments with Privacy and Sovereignty Considerations
+      </h3>
+      <p class="thesis__supervisor">Supervisor: Prof. Dr. Ivan Gudymenko, Chair of Privacy and Security in Ubiquitous Computing</p>
+
+      <p class="project__intro">
+        Cloud threat modeling is usually split into three disconnected exercises: security (STRIDE), privacy
+        (LINDDUN), and digital sovereignty, which most existing tools ignore entirely. This thesis compares
+        five threat modeling tools and approaches, builds a combined fourteen-category taxonomy that merges
+        all three concerns into a single pass, and demonstrates it with a working, fully local Proof-of-Concept.
+      </p>
+
+      <div class="project__groups">
+        <div class="project__group">
+          <h4>Comparative analysis</h4>
+          <ul>
+            <li>Evaluated Microsoft Threat Modeling Tool, OWASP Threat Dragon, IriusRisk, pytm, and LLM-based approaches across eight criteria spanning cloud support, privacy, sovereignty, and lifecycle coverage</li>
+            <li>Found that every evaluated tool scores zero on sovereignty awareness, and only one commercial tool covers the full threat lifecycle</li>
+          </ul>
+        </div>
+
+        <div class="project__group">
+          <h4>Combined taxonomy</h4>
+          <ul>
+            <li>Built a sovereignty threat category from scratch (jurisdictional exposure, foreign access, vendor lock-in, data residency violation), grounded in GDPR Chapter V, the US CLOUD Act, the Schrems II ruling, and the Gaia-X Trust Framework</li>
+            <li>Combined it with STRIDE (security) and four LINDDUN categories (privacy) into one fourteen-sub-category taxonomy applicable in a single pass</li>
+          </ul>
+        </div>
+
+        <div class="project__group">
+          <h4>Proof-of-Concept</h4>
+          <ul>
+            <li>Built a five-stage Python pipeline covering identification, categorization, prioritization, mitigation, and reporting, using Llama 3 via Ollama running fully locally with no external API calls</li>
+            <li>Kept risk scoring and mitigation mapping (NIST, CIS, GDPR, Gaia-X) deterministic and rule-based downstream of a single LLM call, so results stay reproducible</li>
+          </ul>
+        </div>
+
+        <div class="project__group">
+          <h4>Key finding</h4>
+          <ul>
+            <li>On a sample AWS/Kubernetes architecture, the PoC identified 11 threats, including 3 sovereignty threats (e.g. jurisdictional exposure via a US-based email provider) that none of the five evaluated tools would have surfaced</li>
+            <li>Proposed a six-step continuous threat modeling workflow combining existing tools with the new sovereignty layer</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project__tags">
+        <span>STRIDE</span><span>LINDDUN</span><span>GDPR / Schrems II</span><span>Gaia-X</span><span>Python</span><span>Ollama / Llama 3</span><span>NIST · CIS · CSA CCM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section section--alt" id="experience">
+    <h2 class="section__heading">Experience</h2>
+
+    <div class="timeline">
+      <article class="timeline__item">
+        <div class="timeline__when">
+          <span>Jan 2025 – Jul 2025</span>
+        </div>
+        <div class="timeline__body">
+          <h3>Student Research Assistant — Civil Engineering (SHK)</h3>
+          <p class="timeline__org">Technische Universität Dresden</p>
+          <ul>
+            <li>Developed a C++/Qt application for real-time, parallel sensor data acquisition from multiple scales</li>
+            <li>Designed a modular data pipeline serializing measurement data to structured files for analysis</li>
+            <li>Applied software engineering practices: Git version control, code review, documentation</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__when">
+          <span>Nov 2024 – Mar 2025</span>
+        </div>
+        <div class="timeline__body">
+          <h3>Student Research Assistant — Mechanical Engineering (SHK)</h3>
+          <p class="timeline__org">Technische Universität Dresden</p>
+          <ul>
+            <li>Built a Python + Qt desktop application to automate mechanical measurement workflows</li>
+            <li>Designed process-optimization logic that significantly reduced manual data-entry effort</li>
+            <li>Contributed to digitisation and data analysis pipelines in a cross-disciplinary team</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects">
+    <h2 class="section__heading">Key Projects</h2>
+    <p class="section__intro">
+      A selection of academic, lab, and personal projects spanning cloud infrastructure,
+      network security, and applied cryptography.
+      <span class="section__intro-note">Project images are placeholders; real screenshots and diagrams coming soon.</span>
+    </p>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project__media">
+          <img src="placeholder.png" alt="Placeholder — Lunar Edge project image coming soon">
+        </div>
+        <div class="project__body">
+          <p class="project__meta">SoSe 2026 · KP/FPGA — Service &amp; Cloud Computing / Mobile &amp; Ubiquitous Computing · Team of 6, 3 sub-teams</p>
+          <h3>Lunar Edge — IoT Edge Computing &amp; Digital Twin System</h3>
+          <p class="project__role">Co-Lead, Digital Twin sub-team</p>
+
+          <p class="project__intro">
+            A multi-team engineering project building a complete end-to-end IoT edge computing
+            system for autonomous lunar exploration robots (LunarBots). Physical LiDAR sensors on
+            differential-drive robots connect through an embedded IoT gateway (nRF52840 running
+            RIOT OS) to a Raspberry Pi 5 edge box running Kubernetes (K3s) with SLAM, and finally
+            to a cloud-hosted Digital Twin for real-time visualization and state management.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>Platform &amp; operations</h4>
+              <ul>
+                <li>Deployed Eclipse Ditto via Docker Compose on a university research-cloud VM (Ubuntu 24.04)</li>
+                <li>Configured policy management and Web of Things (WoT) Thing Descriptions for formal robot modeling</li>
+                <li>Set up systemd services so the whole stack runs 24/7, independent of any developer's laptop</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Data ingestion</h4>
+              <ul>
+                <li>Built a Flask HTTP receiver bridging the Edge-Box team's data to Eclipse Ditto</li>
+                <li>Ingested real-time pose (mm / mrad), velocity, battery, and state data plus obstacle data via REST</li>
+                <li>Wrote a custom mapper into the Ditto Thing model, persisted through MongoDB</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Robot simulation</h4>
+              <ul>
+                <li>Differential-drive simulator using real LunarBot kinematics (22mm wheel radius, 189mm wheelbase)</li>
+                <li>Straight driving, random turning, and boundary avoidance for up to 7 simultaneous robots</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Object detection &amp; mapping</h4>
+              <ul>
+                <li>SciPy connected-component labeling over the SLAM OccupancyGrid to cluster obstacles</li>
+                <li>Computed centroid, bounding box, and area per obstacle, stored as individual Ditto Things</li>
+                <li>zlib + base64 compression of the SLAM map to fit Ditto's 100KB-per-thing limit</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Live dashboard</h4>
+              <ul>
+                <li>HTML5 canvas + JS dashboard polling Ditto's REST API every 500ms</li>
+                <li>Renders robots with direction arrows, obstacles as overlays, and the SLAM map as a live background layer</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__tags">
+            <span>Python / Flask</span><span>SciPy / NumPy</span><span>Eclipse Ditto</span><span>Docker Compose</span><span>Kubernetes (K3s)</span><span>MongoDB</span><span>systemd</span><span>Linux</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__media">
+          <img src="placeholder.png" alt="Placeholder — Enterprise Network Security Design project image coming soon">
+        </div>
+        <div class="project__body">
+          <p class="project__meta">2026 · Network Security Lab, Prof. Tschorsch, TU Dresden · Team of 5, six virtualized hosts</p>
+          <h3>Enterprise Network Security Design</h3>
+          <p class="project__role">Coordinated across all components</p>
+
+          <p class="project__intro">
+            Designed and deployed a segmented enterprise network as a 5-person team, running six virtualized
+            Linux hosts covering routing, DNS, a public-facing web server, client workstations, and security
+            monitoring — validated end-to-end with hardening checks and intrusion detection.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>Network architecture</h4>
+              <ul>
+                <li>Designed a segmented topology with router/NAT/firewall, DMZ, and internal LAN across six VMs</li>
+                <li>Configured static routing and interface addressing across every network segment</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>DNS &amp; web server</h4>
+              <ul>
+                <li>Deployed a BIND9 DNS server with scoped recursion and query access control</li>
+                <li>Set up an Apache2 web server secured with a publicly trusted TLS certificate (Let's Encrypt / Certbot)</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Firewall &amp; hardening</h4>
+              <ul>
+                <li>Implemented layered iptables NAT/DNAT and forwarding rules enforcing least-privilege traffic flow</li>
+                <li>Validated hardening and exposed services with nmap scans</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Monitoring &amp; resilience</h4>
+              <ul>
+                <li>Deployed Snort as a network intrusion detection system to monitor traffic across segments</li>
+                <li>Configured automated, encrypted, append-only backups with restic to protect against ransomware scenarios</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__tags">
+            <span>iptables</span><span>BIND9</span><span>TLS / Certbot</span><span>DMZ Design</span><span>restic</span><span>Snort IDS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__media">
+          <img src="placeholder.png" alt="Placeholder — Cloud-Native Deployment Pipeline project image coming soon">
+        </div>
+        <div class="project__body">
+          <p class="project__meta">2024 · Personal Project</p>
+          <h3>Cloud-Native Deployment Pipeline</h3>
+          <ul>
+            <li>Containerized a Java Spring Boot microservice with Docker and deployed it to a local Kubernetes cluster</li>
+            <li>Wrote Terraform scripts to provision AWS EC2 + RDS infrastructure with automated GitHub Actions deployment</li>
+            <li>Configured Prometheus + Grafana dashboards for real-time resource and latency monitoring</li>
+          </ul>
+          <div class="project__tags">
+            <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>AWS</span><span>Prometheus / Grafana</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__media">
+          <img src="placeholder.png" alt="Placeholder — End-to-End Cryptography Tool project image coming soon">
+        </div>
+        <div class="project__body">
+          <p class="project__meta">2024 · Personal Project</p>
+          <h3>End-to-End Cryptography Tool</h3>
+          <ul>
+            <li>Implemented a TLS-like handshake in Java simulating RSA key exchange, Diffie-Hellman, and DES encryption</li>
+            <li>Demonstrated PKI, certificate chains, and symmetric/asymmetric encryption flows relevant to securing cloud service communication</li>
+          </ul>
+          <div class="project__tags">
+            <span>Java</span><span>RSA / Diffie-Hellman</span><span>PKI</span><span>TLS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__media">
+          <img src="placeholder.png" alt="Placeholder — Flowershop / Videoshop project image coming soon">
+        </div>
+        <div class="project__body">
+          <p class="project__meta">2023 – 2024 · Software Engineering Practical (SWT), TU Dresden · Team of 7</p>
+          <h3>Flowershop &amp; Videoshop — Full-Stack Spring Boot Applications</h3>
+
+          <p class="project__intro">
+            A semester-long software engineering practical run as a full development lifecycle rather than
+            a single coding exercise: formal requirements specification, UML analysis and design modeling,
+            iterative development with recorded sprint protocols, and two complete full-stack Spring Boot
+            applications built and tested as a team of 7 — a flower-shop management system and a
+            movie/disc rental storefront.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>Requirements &amp; modeling</h4>
+              <ul>
+                <li>Co-authored a formal Pflichtenheft (requirements specification) for both applications</li>
+                <li>Produced UML analysis and design artifacts — class, package, sequence, use-case, and C4 context diagrams</li>
+                <li>Ran iterative development with recorded sprint protocols and peer evaluations</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Flowershop application</h4>
+              <ul>
+                <li>Built modules for calendar/event scheduling, inventory, and a product catalog (bouquets, flowers, gift cards)</li>
+                <li>Implemented sales (simple &amp; wholesaler orders, card and gift-card payment) and contract/event/reservation services with monthly billing</li>
+                <li>Built finance module with cash register tracking and daily/monthly financial reporting</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Videoshop application</h4>
+              <ul>
+                <li>Built a DVD/Blu-ray catalog with comments and ratings, customer registration, and stock management</li>
+                <li>Implemented cart/checkout and order flow secured with Spring Security login</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Architecture &amp; testing</h4>
+              <ul>
+                <li>Structured both apps as Spring Modulith modular monoliths, with module-boundary tests enforcing separation of concerns</li>
+                <li>Wrote unit, integration, and web-integration tests across all modules with JUnit</li>
+                <li>Delivered Thymeleaf front ends with German/English i18n and custom error pages</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__tags">
+            <span>Java / Spring Boot</span><span>Spring Modulith</span><span>Spring Data JPA</span><span>Spring Security</span><span>Thymeleaf</span><span>JUnit</span><span>UML</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section section--alt" id="education">
+    <h2 class="section__heading">Education</h2>
+
+    <div class="timeline">
+      <article class="timeline__item">
+        <div class="timeline__when">
+          <span>2023 – Sep 2026 (expected)</span>
+        </div>
+        <div class="timeline__body">
+          <h3>B.Sc. Informatik (Computer Science)</h3>
+          <p class="timeline__org">Technische Universität Dresden</p>
+          <ul>
+            <li><strong>Advanced Computer Networks</strong> — TCP/IP deep-dive, routing protocols, Software-Defined Networking (excellent grade)</li>
+            <li><strong>Service &amp; Cloud Computing</strong> (Komplexpraktikum) — team-based, hands-on cloud/edge system design and implementation</li>
+            <li><strong>Cryptography</strong> (Komplexpraktikum) — RSA, Diffie-Hellman, digital signatures, steganography, mix- and DC-nets</li>
+            <li><strong>Network Security</strong> — enterprise network design, firewalls, DMZ architecture, intrusion detection</li>
+            <li><strong>Operating Systems</strong> — process/memory management, OS-level security fundamentals</li>
+            <li>Core modules: Algorithms &amp; Data Structures, Databases, Software Engineering</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline__item">
+        <div class="timeline__when">
+          <span>2022</span>
+        </div>
+        <div class="timeline__body">
+          <h3>Abitur — Technische Wissenschaften (Technical Sciences)</h3>
+          <p class="timeline__org">Tunisia · Final Grade 1.9</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="certs">
+      <h3 class="certs__heading">Certifications &amp; Online Courses</h3>
+      <ul class="certs__list">
+        <li><span class="certs__name">Microsoft Azure Fundamentals (AZ-900)</span><span class="certs__org">Microsoft Learn — exam prep in progress</span></li>
+        <li><span class="certs__name">AWS Certified Cloud Practitioner Essentials</span><span class="certs__org">AWS Skill Builder</span></li>
+        <li><span class="certs__name">Google Cloud Computing Foundations</span><span class="certs__org">Google Cloud Skills Boost</span></li>
+        <li><span class="certs__name">Kubernetes for Beginners</span><span class="certs__org">KodeKloud / TechWorld with Nana</span></li>
+        <li><span class="certs__name">Introduction to Linux</span><span class="certs__org">Cisco NetAcad</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <h2 class="section__heading">Skills</h2>
+
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Cloud Platforms</h3>
+        <ul class="pills">
+          <li>Azure VMs</li><li>AKS</li><li>Blob Storage</li><li>ARM / Bicep</li><li>VNet / NSG</li><li>Azure AD / IAM</li><li>Azure Monitor</li><li>Azure DevOps</li><li>Key Vault</li><li>AWS (EC2, S3, IAM, Lambda, VPC)</li><li>GCP (Compute Engine, GKE)</li>
+        </ul>
+      </div>
+
+      <div class="skills__group">
+        <h3>Containers &amp; Orchestration</h3>
+        <ul class="pills">
+          <li>Docker</li><li>Docker Compose</li><li>Kubernetes (K3s)</li><li>Helm</li><li>Container Registries</li>
+        </ul>
+      </div>
+
+      <div class="skills__group">
+        <h3>IaC &amp; Automation</h3>
+        <ul class="pills">
+          <li>Terraform</li><li>ARM Templates</li><li>Bash</li><li>Python scripting</li><li>GitHub Actions</li><li>Ansible</li>
+        </ul>
+      </div>
+
+      <div class="skills__group">
+        <h3>Networking &amp; Security</h3>
+        <ul class="pills">
+          <li>TCP/IP</li><li>DNS (BIND9)</li><li>iptables / NAT</li><li>VPN</li><li>Zero Trust</li><li>PKI &amp; TLS/SSL</li><li>Cryptography (RSA, DH, AES)</li><li>DMZ Design</li><li>IDS (Snort)</li>
+        </ul>
+      </div>
+
+      <div class="skills__group">
+        <h3>Operating Systems</h3>
+        <ul class="pills">
+          <li>Linux (Ubuntu, Debian, Fedora, CentOS)</li><li>systemd</li><li>SELinux</li><li>Nginx / Apache</li><li>OS hardening</li>
+        </ul>
+      </div>
+
+      <div class="skills__group">
+        <h3>Programming Languages</h3>
+        <ul class="pills">
+          <li>Python</li><li>Java</li><li>C / C++</li><li>Bash</li><li>YAML</li><li>SQL</li><li>JavaScript</li><li>Rust</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="languages">
+      <div class="languages__col">
+        <h3>Languages</h3>
+        <ul class="lang-list">
+          <li><span>Arabic</span><span>C2</span></li>
+          <li><span>German</span><span>C1</span></li>
+          <li><span>English</span><span>C1</span></li>
+          <li><span>French</span><span>C1</span></li>
+        </ul>
+      </div>
+      <div class="languages__col">
+        <h3>Soft Skills</h3>
+        <ul class="pills">
+          <li>Fast learner</li><li>Team player</li><li>Structured thinker</li><li>Autonomous</li><li>Problem-solving</li><li>Multilingual communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section--alt section--contact" id="contact">
+    <h2 class="section__heading">Let's talk</h2>
+    <p class="section__intro">
+      I'm currently looking for a Cloud or DevOps Engineer role, ideally with a strong Azure
+      focus. Feel free to reach out directly.
+    </p>
+
+    <div class="contact">
+      <a class="contact__item" href="mailto:bechirsayadi01@gmail.com">
+        <span class="contact__label">Email</span>
+        <span class="contact__value">bechirsayadi01@gmail.com</span>
+      </a>
+      <a class="contact__item" href="tel:+491788053303">
+        <span class="contact__label">Phone</span>
+        <span class="contact__value">+49 178 8053303</span>
+      </a>
+      <div class="contact__item">
+        <span class="contact__label">Location</span>
+        <span class="contact__value">Dresden, Germany</span>
+      </div>
+      <a class="contact__item" href="https://github.com/bach47-lab" target="_blank" rel="noopener">
+        <span class="contact__label">GitHub</span>
+        <span class="contact__value">github.com/bach47-lab</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Bechir Sayadi. Built from scratch, deployed with intent.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
