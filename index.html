@@ -363,32 +363,94 @@
           <img src="placeholder.png" alt="Placeholder — Cloud-Native Deployment Pipeline project image coming soon">
         </div>
         <div class="project__body">
-          <p class="project__meta">2024 · Personal Project</p>
+          <p class="project__meta">2024 · Personal Project · <a href="https://github.com/bach47-lab/cloud-native-pipeline" target="_blank" rel="noopener">github.com/bach47-lab/cloud-native-pipeline</a></p>
           <h3>Cloud-Native Deployment Pipeline</h3>
-          <ul>
-            <li>Containerized a Java Spring Boot microservice with Docker and deployed it to a local Kubernetes cluster</li>
-            <li>Wrote Terraform scripts to provision AWS EC2 + RDS infrastructure with automated GitHub Actions deployment</li>
-            <li>Configured Prometheus + Grafana dashboards for real-time resource and latency monitoring</li>
-          </ul>
+
+          <p class="project__intro">
+            A production-style REST API (Java 21, Spring Boot 3) built to exercise the full path from code to
+            a monitored, running service: containerized, deployed to Kubernetes, wired into CI/CD, and observed
+            with a real metrics stack rather than left as a bare container.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>Containerization &amp; orchestration</h4>
+              <ul>
+                <li>Containerized the Spring Boot service with Docker and deployed it to a Kubernetes cluster (2 replicas), tested locally via Minikube</li>
+                <li>Wrote Kubernetes manifests for deployment, service, and health checks</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>CI/CD</h4>
+              <ul>
+                <li>Built a GitHub Actions pipeline covering the Docker build and deployment stage end to end</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Monitoring</h4>
+              <ul>
+                <li>Exposed health and metrics via Spring Actuator, scraped by Prometheus</li>
+                <li>Configured Grafana dashboards for real-time resource and latency monitoring</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>AWS provisioning</h4>
+              <ul>
+                <li>Separately wrote Terraform scripts to provision AWS EC2 + RDS infrastructure for cloud deployment of the same service</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="project__tags">
-            <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>AWS</span><span>Prometheus / Grafana</span>
+            <span>Java / Spring Boot</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Prometheus / Grafana</span><span>Terraform</span><span>AWS</span>
           </div>
         </div>
       </article>
 
       <article class="project">
         <div class="project__media">
-          <img src="placeholder.png" alt="Placeholder — End-to-End Cryptography Tool project image coming soon">
+          <img src="placeholder.png" alt="Placeholder — TLS Handshake Simulator project image coming soon">
         </div>
         <div class="project__body">
-          <p class="project__meta">2024 · Personal Project</p>
-          <h3>End-to-End Cryptography Tool</h3>
-          <ul>
-            <li>Implemented a TLS-like handshake in Java simulating RSA key exchange, Diffie-Hellman, and DES encryption</li>
-            <li>Demonstrated PKI, certificate chains, and symmetric/asymmetric encryption flows relevant to securing cloud service communication</li>
-          </ul>
+          <p class="project__meta">2024 · Personal Project · <a href="https://github.com/bach47-lab/tls-cryptography-tool" target="_blank" rel="noopener">github.com/bach47-lab/tls-cryptography-tool</a></p>
+          <h3>TLS Handshake Simulator</h3>
+
+          <p class="project__intro">
+            A web app that runs a full TLS-like cryptographic handshake end to end in real time, built to make
+            the abstract steps of PKI and key exchange concrete rather than just theoretical.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>PKI &amp; certificates</h4>
+              <ul>
+                <li>Generates RSA-2048 key pairs for both server and client</li>
+                <li>Signs certificates with SHA-256withRSA and verifies them, simulating a certificate chain</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Key exchange &amp; encryption</h4>
+              <ul>
+                <li>Performs Diffie-Hellman-2048 key exchange to derive a shared secret</li>
+                <li>Derives an AES-256-CBC session key from the shared secret for end-to-end message encryption and decryption</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Delivery</h4>
+              <ul>
+                <li>Built as a Spring Boot backend with a vanilla JS frontend, so each handshake step is visible as it happens</li>
+                <li>Packaged as a Docker image published to GitHub Container Registry, runnable with a single command</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="project__tags">
-            <span>Java</span><span>RSA / Diffie-Hellman</span><span>PKI</span><span>TLS</span>
+            <span>Java / Spring Boot</span><span>RSA-2048</span><span>Diffie-Hellman</span><span>AES-256-CBC</span><span>PKI</span><span>Docker</span>
           </div>
         </div>
       </article>
