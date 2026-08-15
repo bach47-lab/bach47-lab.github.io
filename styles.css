@@ -280,7 +280,7 @@ img{ max-width: 100%; display: block; }
 .hero__photo-frame img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero__photo-tag{
@@ -572,7 +572,7 @@ img{ max-width: 100%; display: block; }
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .project__media img[data-broken="true"]{
@@ -905,4 +905,33 @@ button:focus-visible{
   inset: 0;
   z-index: -1;
   pointer-events: none;
+}
+
+/* Full-width screenshot override for Lunar Edge project */
+.project:has(.project__media--full) {
+  display: block;
+}
+
+.project:has(.project__media--full) .project__media {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.project__media--full {
+  width: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Full-width body for project cards with no media (placeholder removed) */
+.project:not(:has(.project__media)) {
+  display: block;
+}
+
+.project:not(:has(.project__media)) .project__body {
+  width: 100%;
+  max-width: none;
 }
