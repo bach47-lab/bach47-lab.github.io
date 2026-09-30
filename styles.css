@@ -259,8 +259,8 @@ img{ max-width: 100%; display: block; }
 }
 
 .hero__photo-frame{
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -840,7 +840,7 @@ button:focus-visible{
     justify-items: center;
   }
   .hero__photo{ justify-self: center; order: -1; }
-  .hero__photo-frame{ width: 11rem; height: 11rem; }
+  .hero__photo-frame{ width: 8rem; height: 8rem; }
   .hero__actions{ justify-content: center; }
 
   .project{ grid-template-columns: 1fr; }

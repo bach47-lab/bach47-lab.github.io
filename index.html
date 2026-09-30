@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bechir Sayadi | Cloud Engineer</title>
-<meta name="description" content="Bechir Sayadi, Cloud Engineer specializing in Microsoft Azure, DevOps automation, and cloud security. B.Sc. Informatik, TU Dresden.">
+<title>Bechir Sayadi | Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Bechir Sayadi, Cloud &amp; DevOps Engineer specializing in Microsoft Azure, infrastructure as code, and CI/CD automation. B.Sc. Informatik, TU Dresden.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -42,12 +42,12 @@
 
     <div class="hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow">Cloud Engineer · DevOps · Cloud Security</p>
+        <p class="eyebrow">Cloud &amp; DevOps Engineer · Azure · Infrastructure as Code</p>
         <h1 class="hero__name">Bechir Sayadi</h1>
         <p class="hero__lead">
-          Final-year B.Sc. Informatik student at TU Dresden building secure, automated
+          Final-year B.Sc. Informatik student at TU Dresden building automated, reliable
           infrastructure on <strong>Microsoft Azure</strong> — with hands-on depth in
-          Kubernetes, network security, and cryptography.
+          Kubernetes, CI/CD, and Infrastructure as Code.
         </p>
 
         <div class="hero__actions">
@@ -98,15 +98,14 @@
         <p>
           I'm a final-year <strong>Computer Science student at TU Dresden</strong> (graduating
           Aug/Sep 2026), specializing in cloud engineering with a strong focus on
-          <strong>Microsoft Azure</strong> and DevOps automation — backed by a solid theoretical
-          and applied foundation in network security, operating systems security, cryptography,
-          and application security.
+          <strong>Microsoft Azure</strong> and DevOps automation — backed by a solid foundation in operating systems, networking, and software engineering,
+          plus a security background that shapes how I build.
         </p>
         <p>
           I have hands-on experience deploying containerized services, Kubernetes workloads, and
           IoT-edge / digital twin architectures on Linux infrastructure. My bachelor thesis
           focused on cloud security threat modeling across security, privacy, and digital
-          sovereignty dimensions. I'm looking to bring a security-conscious, automation-first
+          sovereignty dimensions. I'm looking to bring an automation-first, security-conscious
           mindset to an Azure-focused Cloud or DevOps Engineer role.
         </p>
         <p>
@@ -115,8 +114,8 @@
           <strong>Ansible</strong> and <strong>Terraform</strong>, and orchestration on <strong>Kubernetes</strong> and
           <strong>Docker</strong> — across academic, lab, and personal projects. I am actively deepening this
           with <strong>Jenkins</strong> and the Azure DevOps/AZ-400 track. What I bring is not just tool
-          familiarity but a security-first habit of mind from my thesis and network security work — I do not
-          just automate a deployment, I think about what happens if it is attacked. I am looking for a team
+          familiarity but the habit of treating every deployment as something that has to be
+          repeatable, observable, and safe to run. I am looking for a team
           willing to invest in that trajectory, and I intend to repay it fast.
         </p>
       </div>
@@ -213,7 +212,7 @@
             <li>Contributed to core tech-stack deployment and research automating fintech and AI data pipelines</li>
             <li>Designed and optimized automated CI/CD pipelines using GitHub Actions to accelerate code deployment</li>
             <li>Packaged machine learning models into lightweight Docker containers for consistent, reproducible environments</li>
-            <li>Researched and provisioned scalable cloud environment workflows on Azure and AWS using Terraform (IaC)</li>
+            <li>Researched scalable cloud environment workflows using Infrastructure as Code (IaC) principles</li>
             <li>Worked independently in a remote setting, maintaining clear communication and punctual delivery on all deadlines</li>
           </ul>
         </div>
@@ -224,11 +223,11 @@
           <span>Jan 2025 – Jul 2025</span>
         </div>
         <div class="timeline__body">
-          <h3>Student Research Assistant — Civil Engineering (SHK)</h3>
+          <h3>Student Research Assistant — Building Climatology (SHK)</h3>
           <p class="timeline__org">Technische Universität Dresden</p>
           <ul>
             <li>Developed a C++/Qt application for real-time, parallel sensor data acquisition from multiple scales</li>
-            <li>Designed a modular data pipeline serializing measurement data to structured files for analysis</li>
+            <li>Stored the measurement data of an absorption test in structured files for analysis</li>
             <li>Applied software engineering practices: Git version control, code review, documentation</li>
           </ul>
         </div>
@@ -239,12 +238,12 @@
           <span>Nov 2024 – Apr 2025</span>
         </div>
         <div class="timeline__body">
-          <h3>Student Research Assistant — Mechanical Engineering (SHK)</h3>
+          <h3>Student Research Assistant — Textile Machinery (SHK)</h3>
           <p class="timeline__org">Technische Universität Dresden</p>
           <ul>
-            <li>Built a Python + Qt desktop application to automate mechanical measurement workflows</li>
-            <li>Designed process-optimization logic that significantly reduced manual data-entry effort</li>
-            <li>Contributed to digitisation and data analysis pipelines in a cross-disciplinary team</li>
+            <li>Developed a simple Python GUI to visualize measurement results of textile sensors</li>
+            <li>Built a test unit for IMU sensors</li>
+            <li>Prepared measurement samples with strain sensors</li>
           </ul>
         </div>
       </article>
@@ -256,11 +255,60 @@
     <h2 class="section__heading">Key Projects</h2>
     <p class="section__intro">
       A selection of academic, lab, and personal projects spanning cloud infrastructure,
-      network security, and applied cryptography.
+      CI/CD, containers, and Linux systems.
       <span class="section__intro-note">Project images are placeholders; real screenshots and diagrams coming soon.</span>
     </p>
 
     <div class="projects">
+
+      <article class="project">
+        <div class="project__body">
+          <p class="project__meta">2024 · Personal Project · <a href="https://github.com/bach47-lab/cloud-native-pipeline" target="_blank" rel="noopener">github.com/bach47-lab/cloud-native-pipeline</a></p>
+          <h3>Cloud-Native Deployment Pipeline</h3>
+
+          <p class="project__intro">
+            A production-style REST API (Java 21, Spring Boot 3) built to exercise the full path from code to
+            a monitored, running service: containerized, deployed to Kubernetes, wired into CI/CD, and observed
+            with a real metrics stack rather than left as a bare container.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>Containerization &amp; orchestration</h4>
+              <ul>
+                <li>Containerized the Spring Boot service with Docker and deployed it to a Kubernetes cluster (2 replicas), tested locally via Minikube</li>
+                <li>Wrote Kubernetes manifests for deployment, service, and health checks</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>CI/CD</h4>
+              <ul>
+                <li>Built a GitHub Actions pipeline covering the Docker build and deployment stage end to end</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Monitoring</h4>
+              <ul>
+                <li>Exposed health and metrics via Spring Actuator, scraped by Prometheus</li>
+                <li>Configured Grafana dashboards for real-time resource and latency monitoring</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>AWS provisioning</h4>
+              <ul>
+                <li>Separately wrote Terraform scripts to provision AWS EC2 + RDS infrastructure for cloud deployment of the same service</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__tags">
+            <span>Java / Spring Boot</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Prometheus / Grafana</span><span>Terraform</span><span>AWS</span>
+          </div>
+        </div>
+      </article>
 
       <article class="project">
         <div class="project__media">
@@ -332,152 +380,6 @@
 
       <article class="project">
         <div class="project__media">
-          <img src="network_security.png" alt="Enterprise Network Security Design diagram" class="project__media--full">
-        </div>
-        <div class="project__body">
-          <p class="project__meta">2026 · Network Security Lab, Prof. Tschorsch, TU Dresden · Team of 5, six virtualized hosts</p>
-          <h3>Enterprise Network Security Design</h3>
-          <p class="project__role">Coordinated across all components</p>
-
-          <p class="project__intro">
-            Designed and deployed a segmented enterprise network as a 5-person team, running six virtualized
-            Linux hosts covering routing, DNS, a public-facing web server, client workstations, and security
-            monitoring — validated end-to-end with hardening checks and intrusion detection.
-          </p>
-
-          <div class="project__groups">
-            <div class="project__group">
-              <h4>Network architecture</h4>
-              <ul>
-                <li>Designed a segmented topology with router/NAT/firewall, DMZ, and internal LAN across six VMs</li>
-                <li>Configured static routing and interface addressing across every network segment</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>DNS &amp; web server</h4>
-              <ul>
-                <li>Deployed a BIND9 DNS server with scoped recursion and query access control</li>
-                <li>Set up an Apache2 web server secured with a publicly trusted TLS certificate (Let's Encrypt / Certbot)</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>Firewall &amp; hardening</h4>
-              <ul>
-                <li>Implemented layered iptables NAT/DNAT and forwarding rules enforcing least-privilege traffic flow</li>
-                <li>Validated hardening and exposed services with nmap scans</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>Monitoring &amp; resilience</h4>
-              <ul>
-                <li>Deployed Snort as a network intrusion detection system to monitor traffic across segments</li>
-                <li>Configured automated, encrypted, append-only backups with restic to protect against ransomware scenarios</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__tags">
-            <span>iptables</span><span>BIND9</span><span>TLS / Certbot</span><span>DMZ Design</span><span>restic</span><span>Snort IDS</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project__body">
-          <p class="project__meta">2024 · Personal Project · <a href="https://github.com/bach47-lab/cloud-native-pipeline" target="_blank" rel="noopener">github.com/bach47-lab/cloud-native-pipeline</a></p>
-          <h3>Cloud-Native Deployment Pipeline</h3>
-
-          <p class="project__intro">
-            A production-style REST API (Java 21, Spring Boot 3) built to exercise the full path from code to
-            a monitored, running service: containerized, deployed to Kubernetes, wired into CI/CD, and observed
-            with a real metrics stack rather than left as a bare container.
-          </p>
-
-          <div class="project__groups">
-            <div class="project__group">
-              <h4>Containerization &amp; orchestration</h4>
-              <ul>
-                <li>Containerized the Spring Boot service with Docker and deployed it to a Kubernetes cluster (2 replicas), tested locally via Minikube</li>
-                <li>Wrote Kubernetes manifests for deployment, service, and health checks</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>CI/CD</h4>
-              <ul>
-                <li>Built a GitHub Actions pipeline covering the Docker build and deployment stage end to end</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>Monitoring</h4>
-              <ul>
-                <li>Exposed health and metrics via Spring Actuator, scraped by Prometheus</li>
-                <li>Configured Grafana dashboards for real-time resource and latency monitoring</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>AWS provisioning</h4>
-              <ul>
-                <li>Separately wrote Terraform scripts to provision AWS EC2 + RDS infrastructure for cloud deployment of the same service</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__tags">
-            <span>Java / Spring Boot</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Prometheus / Grafana</span><span>Terraform</span><span>AWS</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project__body">
-          <p class="project__meta">2024 · Personal Project · <a href="https://github.com/bach47-lab/tls-cryptography-tool" target="_blank" rel="noopener">github.com/bach47-lab/tls-cryptography-tool</a></p>
-          <h3>TLS Handshake Simulator</h3>
-
-          <p class="project__intro">
-            A web app that runs a full TLS-like cryptographic handshake end to end in real time, built to make
-            the abstract steps of PKI and key exchange concrete rather than just theoretical.
-          </p>
-
-          <div class="project__groups">
-            <div class="project__group">
-              <h4>PKI &amp; certificates</h4>
-              <ul>
-                <li>Generates RSA-2048 key pairs for both server and client</li>
-                <li>Signs certificates with SHA-256withRSA and verifies them, simulating a certificate chain</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>Key exchange &amp; encryption</h4>
-              <ul>
-                <li>Performs Diffie-Hellman-2048 key exchange to derive a shared secret</li>
-                <li>Derives an AES-256-CBC session key from the shared secret for end-to-end message encryption and decryption</li>
-              </ul>
-            </div>
-
-            <div class="project__group">
-              <h4>Delivery</h4>
-              <ul>
-                <li>Built as a Spring Boot backend with a vanilla JS frontend, so each handshake step is visible as it happens</li>
-                <li>Packaged as a Docker image published to GitHub Container Registry, runnable with a single command</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project__tags">
-            <span>Java / Spring Boot</span><span>RSA-2048</span><span>Diffie-Hellman</span><span>AES-256-CBC</span><span>PKI</span><span>Docker</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project__media">
           <img src="Flower_shop.png" alt="Flowershop and Videoshop full-stack Spring Boot applications" class="project__media--full">
         </div>
         <div class="project__body">
@@ -537,6 +439,104 @@
         </div>
       </article>
 
+      <article class="project">
+        <div class="project__media">
+          <img src="network_security.png" alt="Enterprise Network Security Design diagram" class="project__media--full">
+        </div>
+        <div class="project__body">
+          <p class="project__meta">2026 · Network Security Lab, Prof. Tschorsch, TU Dresden · Team of 5, six virtualized hosts</p>
+          <h3>Enterprise Network Security Design</h3>
+          <p class="project__role">Coordinated across all components</p>
+
+          <p class="project__intro">
+            Designed and deployed a segmented enterprise network as a 5-person team, running six virtualized
+            Linux hosts covering routing, DNS, a public-facing web server, client workstations, and security
+            monitoring — validated end-to-end with hardening checks and intrusion detection.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>Network architecture</h4>
+              <ul>
+                <li>Designed a segmented topology with router/NAT/firewall, DMZ, and internal LAN across six VMs</li>
+                <li>Configured static routing and interface addressing across every network segment</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>DNS &amp; web server</h4>
+              <ul>
+                <li>Deployed a BIND9 DNS server with scoped recursion and query access control</li>
+                <li>Set up an Apache2 web server secured with a publicly trusted TLS certificate (Let's Encrypt / Certbot)</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Firewall &amp; hardening</h4>
+              <ul>
+                <li>Implemented layered iptables NAT/DNAT and forwarding rules enforcing least-privilege traffic flow</li>
+                <li>Validated hardening and exposed services with nmap scans</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Monitoring &amp; resilience</h4>
+              <ul>
+                <li>Deployed Snort as a network intrusion detection system to monitor traffic across segments</li>
+                <li>Configured automated, encrypted, append-only backups with restic to protect against ransomware scenarios</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__tags">
+            <span>iptables</span><span>BIND9</span><span>TLS / Certbot</span><span>DMZ Design</span><span>restic</span><span>Snort IDS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__body">
+          <p class="project__meta">2024 · Personal Project · <a href="https://github.com/bach47-lab/tls-cryptography-tool" target="_blank" rel="noopener">github.com/bach47-lab/tls-cryptography-tool</a></p>
+          <h3>TLS Handshake Simulator</h3>
+
+          <p class="project__intro">
+            A web app that runs a full TLS-like cryptographic handshake end to end in real time, built to make
+            the abstract steps of PKI and key exchange concrete rather than just theoretical.
+          </p>
+
+          <div class="project__groups">
+            <div class="project__group">
+              <h4>PKI &amp; certificates</h4>
+              <ul>
+                <li>Generates RSA-2048 key pairs for both server and client</li>
+                <li>Signs certificates with SHA-256withRSA and verifies them, simulating a certificate chain</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Key exchange &amp; encryption</h4>
+              <ul>
+                <li>Performs Diffie-Hellman-2048 key exchange to derive a shared secret</li>
+                <li>Derives an AES-256-CBC session key from the shared secret for end-to-end message encryption and decryption</li>
+              </ul>
+            </div>
+
+            <div class="project__group">
+              <h4>Delivery</h4>
+              <ul>
+                <li>Built as a Spring Boot backend with a vanilla JS frontend, so each handshake step is visible as it happens</li>
+                <li>Packaged as a Docker image published to GitHub Container Registry, runnable with a single command</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project__tags">
+            <span>Java / Spring Boot</span><span>RSA-2048</span><span>Diffie-Hellman</span><span>AES-256-CBC</span><span>PKI</span><span>Docker</span>
+          </div>
+        </div>
+      </article>
+
+
     </div>
   </section>
 
@@ -555,7 +555,6 @@
           <ul>
             <li><strong>Advanced Computer Networks</strong> — TCP/IP deep-dive, routing protocols, Software-Defined Networking (excellent grade)</li>
             <li><strong>Service &amp; Cloud Computing</strong> (Komplexpraktikum) — team-based, hands-on cloud/edge system design and implementation</li>
-            <li><strong>Cryptography</strong> (Komplexpraktikum) — RSA, Diffie-Hellman, digital signatures, steganography, mix- and DC-nets</li>
             <li><strong>Network Security</strong> — enterprise network design, firewalls, DMZ architecture, intrusion detection</li>
             <li><strong>Operating Systems</strong> — process/memory management, OS-level security fundamentals</li>
             <li>Core modules: Algorithms &amp; Data Structures, Databases, Software Engineering</li>
@@ -603,21 +602,27 @@
       <div class="skills__group">
         <h3>Containers &amp; Orchestration</h3>
         <ul class="pills">
-          <li>Docker</li><li>Docker Compose</li><li>Kubernetes (K3s)</li><li>Helm</li><li>Container Registries</li>
+          <li>Docker</li><li>Docker Compose</li><li>Kubernetes (AKS, K3s)</li><li>Helm</li><li>Kustomize</li><li>Container Registries</li>
         </ul>
       </div>
 
       <div class="skills__group">
+        <h3>CI/CD &amp; Observability</h3>
+        <ul class="pills">
+          <li>GitHub Actions</li><li>Azure DevOps Pipelines</li><li>GitLab CI</li><li>ArgoCD (GitOps)</li><li>Jenkins (learning)</li><li>pytest in pipelines</li><li>Prometheus</li><li>Grafana</li><li>Alertmanager</li><li>Azure Monitor</li>
+        </ul>
+      </div>
+      <div class="skills__group">
         <h3>IaC &amp; Automation</h3>
         <ul class="pills">
-          <li>Terraform</li><li>ARM Templates</li><li>Bash</li><li>Python scripting</li><li>GitHub Actions</li><li>Ansible</li>
+          <li>Terraform</li><li>Bicep / ARM Templates</li><li>Ansible</li><li>Bash</li><li>Python scripting</li>
         </ul>
       </div>
 
       <div class="skills__group">
         <h3>Networking &amp; Security</h3>
         <ul class="pills">
-          <li>TCP/IP</li><li>DNS (BIND9)</li><li>iptables / NAT</li><li>VPN</li><li>Zero Trust</li><li>PKI &amp; TLS/SSL</li><li>Cryptography (RSA, DH, AES)</li><li>DMZ Design</li><li>IDS (Snort)</li>
+          <li>TCP/IP</li><li>DNS (BIND9)</li><li>iptables / NAT</li><li>TLS/SSL</li><li>RBAC &amp; Key Vault</li>
         </ul>
       </div>
 
